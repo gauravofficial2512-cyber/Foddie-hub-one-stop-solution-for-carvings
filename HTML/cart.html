@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieHub | Cart</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/cart.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="container nav-container">
+
+        <a href="homepage.html" class="logo">
+            Foodie<span>Hub</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="homepage.html">Home</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="menu.html">Menu</a>
+            <a href="fooddetails.html">Food Details</a>
+            <a href="booking.html">Table Booking</a>
+            <a href="tracking.html">Tracking</a>
+            <a href="wishlist.html">Wishlist</a>
+        </nav>
+
+        <div class="nav-actions">
+                <a href="cart.html" class="cart-btn active-cart">
+                    🛒 Cart <span class="cart-badge" id="cart-counter">0</span>
+                </a>
+
+                <a href="login.html" class="login-btn" id="login-link">Login</a>
+                <a href="registration.html" class="signup-btn" id="signup-link">Sign Up</a>
+
+                <span id="user-greeting" hidden></span>
+
+                <button type="button" id="logout-btn" hidden>
+                    Logout
+                </button>
+        </div>
+
+    </div>
+</header>
+
+<main>
+
+<section class="cart-header">
+    <div class="container">
+        <p class="cart-label">FOODIEHUB</p>
+        <h1>Your Cart</h1>
+        <p>Review your selected items before placing your order.</p>
+    </div>
+</section>
+
+<section class="cart-section">
+    <div class="container cart-layout">
+
+        <div class="cart-left">
+
+            <div class="cart-top">
+                <div>
+                    <h2>Cart Items</h2>
+                    <p id="cart-item-count">0 items in your cart</p>
+                </div>
+
+                <a href="menu.html" class="continue-link">
+                    + Add More Items
+                </a>
+            </div>
+
+            <div class="cart-items" id="cart-items-container">
+                
+            </div>
+
+            <div class="cart-note">
+
+                <span>💡</span>
+
+                <div>
+                    <strong>Good to know</strong>
+
+                    <p>
+                        You can change item quantities before proceeding to checkout.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <aside class="bill-card">
+
+            <h2>Bill Summary</h2>
+
+            <div class="bill-row">
+                <span>Item Total</span>
+                <span id="bill-subtotal">₹0</span>
+            </div>
+
+            <div class="bill-row">
+                <span>Delivery Fee</span>
+                <span id="bill-delivery">₹0</span>
+            </div>
+
+            <div class="bill-row">
+                <span>Taxes & Charges</span>
+                <span id="bill-taxes">₹0</span>
+            </div>
+
+            <div class="bill-divider"></div>
+
+            <div class="bill-total">
+                <span>Grand Total</span>
+                <strong id="bill-grand-total">₹0</strong>
+            </div>
+
+            <button type="button" class="checkout-btn" id="checkout-btn">
+                Proceed to Checkout
+            </button>
+
+            <a href="menu.html" class="shopping-btn">
+                Continue Shopping
+            </a>
+
+            <div class="secure-payment">
+                <span>🔒</span>
+                <p>Secure checkout experience</p>
+            </div>
+
+        </aside>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+
+    <div class="container footer-container">
+
+        <div class="footer-about">
+
+            <a href="homepage.html" class="logo">
+                Foodie<span>Hub</span>
+            </a>
+
+            <p>
+                Your simple destination for discovering delicious food and restaurants.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Explore</h3>
+
+            <a href="restaurants.html">
+                Restaurants
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="fooddetails.html">
+                Food Details
+            </a>
+
+            <a href="wishlist.html">
+                Wishlist
+            </a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Services</h3>
+
+            <a href="booking.html">
+                Table Booking
+            </a>
+
+            <a href="tracking.html">
+                Order Tracking
+            </a>
+
+           
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Account</h3>
+
+            <a href="login.html">
+                Login
+            </a>
+
+            <a href="registration.html">
+                Sign Up
+            </a>
+
+            <a href="cart.html">
+                Cart
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 FoodieHub. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<script src="../JAVASCRIPT/cart-common.js" defer></script>
+<script src="../JAVASCRIPT/cart.js" defer></script>
+<script src="../JAVASCRIPT/auth.js" defer></script>
+</body>
+
+</html>
